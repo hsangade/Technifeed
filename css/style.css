@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat",sans-serif;
+}
+.header{
+  height: 100px;
+  background: #34495e;
+  padding: 0 20px;
+  color: #fff;
+}
+.logo{
+  line-height: 100px;
+  font-size: 50px;
+  float: left;
+  text-transform: uppercase;
+}
+.menu{
+  float: right;
+  line-height: 100px;
+  font-size: 15px;
+  cursor:
+}
+.menu a{
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0 10px;
+  transition: 0.4s;
+}
+.menu a:hover{
+  color: #3498db;
+}
