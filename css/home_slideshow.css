@@ -5,9 +5,14 @@ img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow {
-  max-width: 1000px;
+  max-width: 900px;
   position: relative;
   margin: auto;
+}
+
+.slideshow img {
+width: 900px;
+height: 400px;
 }
 
 /* Caption text */
@@ -15,7 +20,7 @@ img {vertical-align: middle;}
   display: block;
   position: relative;
   overflow: hidden;
-  background: rgba(0,0,0,0.75); 
+  background: rgba(0,0,0,0.75);
   color: #f2f2f2;
   font-size: 15px;
   padding: 8px 12px;
@@ -36,8 +41,8 @@ img {vertical-align: middle;}
 
 /* The dots/bullets/indicators */
 .dot {
-  height: 15px;
-  width: 15px;
+  height: 10px;
+  width: 10px;
   margin: 0 2px;
   background-color: #bbb;
   border-radius: 50%;
