@@ -1,18 +1,17 @@
 * {box-sizing: border-box;}
 body {font-family: Verdana, sans-serif;}
 slide {display: none;}
-img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow {
-  max-width: 900px;
+  max-width: 60%;
   position: relative;
   margin: auto;
 }
 
 .slideshow img {
-width: 900px;
-height: 400px;
+  vertical-align: middle;
+  max-width: 100%;
 }
 
 /* Caption text */
