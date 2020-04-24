@@ -26,6 +26,20 @@ body{
   color: #f2f2f2;
 }
 
+.name a{
+  color: #f2f2f2;
+  list-style: none;
+  display: inline;
+  float: right;
+}
+.name a{
+  text-decoration: none;
+  color: #f2f2f2;
+  display: inline-block;
+  text-align: center;
+  transition: all .5s ease-in;
+}
+
 .header li{
   list-style: none;
   display: inline;
