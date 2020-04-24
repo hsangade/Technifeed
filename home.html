@@ -9,7 +9,7 @@
     <title>TechniFeed - Daily Technology News</title>
     <!-- <link rel="icon" href="icons/tittleicon.png"> -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/home_slideshow.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
   </head>
 
   <body>
@@ -23,36 +23,87 @@
         <li><a href="#">Menu</a></li>
       </ul>
     </div>
-    <div class="slideshow">
-      <div class="slide fade">
-        <a href="#">
-          <img src="imgs/iphone12.jpg">
-        </a>
-        <div class="slidetext">iPhone 12 Series Production Delayed; iPhone SE Plus Pushed to Second Half of 2021: Ming-Chi Kuo
+
+    <!-- BELOW CODE CONTAINS CARD LAYOUT -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class = "card">
+                    <div class="sliderText">
+                        <img src="imgs/iphone12.jpg">
+                    </div>
+                    <div class="content">
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class = "card">
+                    <div class="sliderText">
+                        <img src="imgs/voda-idea.jpg">
+                    </div>
+                    <div class="content">
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class = "card">
+                    <div class="sliderText">
+                        <img src="imgs/xiaomi mijia 1s.jpg">
+                    </div>
+                    <div class="content">
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
-      </div>
-      <div class="slide fade">
-        <a href="#">
-          <img src="imgs/voda-idea.jpg">
-        </a>
-        <div class="slidetext">Vodafone Idea Reduces Scope of Double Data Offer to 9 Circles, Limits Benefits to 2 Recharges
-        </div>
-      </div>
-      <div class="slide fade">
-          <a href="#">
-            <img src="imgs/xiaomi mijia 1s.jpg">
-          </a>
-        <div class="slidetext">Xiaomi Mijia Scooter 1S With 30km Range, 25kmph Top Speed Launched
-        </div>
-      </div>
-    </div>
-    <br>
-    <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
-    <script src="js/slideshow.js">
-    </script>
+  </div>
+  <!-- Card Layout Ends Here -->
+
+
+  <!-- Initialize Swiper -->
+  <script src="js/swiper.min.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 500,
+        modifier: 1,
+        slideShadows : true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
+
   </body>
 </html>
